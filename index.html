@@ -6,18 +6,18 @@
 		<meta name="viewport" content="width-dewice-width, initial-scale=1">
 		<title>Blasting Off with Bootstrap</title>
 		
-		<!-- Bootsrap -->
+		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/main/css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
 	</head>
 	<body>
 		
-		<div>
-			<div>
-				<div>
-					<a href="index.html">Blasting Off with Bootsrap</a>
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container" role="navigation">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">Blasting Off with Bootstrap</a>
 					
-					<button type="button">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -25,17 +25,17 @@
 					</button>
 				</div>
 				
-				<ul class="">
+				<ul class="nav navbar-nav navbar-right collapse navbar-collapse">
 					<li><a href="#">Tickets</a></li>
 					<li><a href="#">Stations</a></li>
-					<li class="">
-						<a href="/about">About <span class=""></span></a>
-						<ul class="">
+					<li class="dropdown">
+						<a href="/about" data-target="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
 							<li><a href="#">Your Story</a></li>
 							<li><a href="#">Contact Us</a></li>
-							<li><a></a></li>
+							<li class="devider"></li>
 							<li><a href="#">Blog</a></li>
-							<li><a></a></li>
+							<li class="devider"></li>
 							<li><a href="#">Twitter</a></li>
 							<li><a href="#">Facebook</a></li>
 						</ul>
@@ -44,67 +44,67 @@
 			</div>
 		</div>
 		
-		<div class="">
-			<div>
-				<div>
+		<div class="container">
+			<div class="row well well-lg">
+				<div class="col-md-6">
 					<h2>The Fastest Way to Space</h2>
-					<p class="">Make your way to space in our rocket, elevator or transporter.</p>
-					<button type="button" class="">Take the Tour</button>
-					<button type="button" class="">Book Tickets Now</button>
+					<p class="lead">Make your way to space in our rocket, elevator or transporter.</p>
+					<button type="button" class="btn btn-lg btn-default">Take the Tour</button>
+					<button type="button" class="btn btn-lg btn-primary">Book Tickets Now</button>
 				</div>
-				<div class="">
-					<img src="images/img-header.jpg" alt="Blast off with Bootsrap" />
+				<div class="col-md-6 visible-md visible-lg">
+					<img src="images/img-header.jpg" alt="Blast off with Bootstrap" />
 				</div>
 			</div>
 			
-			<div class="">
-				<div class="">
-					<i></i>
+			<div class="row text-center features">
+				<div class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+					<i class="glyphicon glyphicon-briefcase"></i>
 					<h3>Book Today!</h3>
 					<p>Even if you're traveling tomorrow, you can still get tickets today. We have a number
 					 of conveniently located ports around the globe to service everycome.</p>
 				</div>
 				
-				<div>
-					<i></i>
+				<div class="col-sm-4 col-xs-6">
+					<i class="glyphicon glyphicon-random"></i>
 					<h3>Go Anywhere</h3>
 					<p>If you need to get to space today, why not try out a transporter?
 					Despite the claims, there are have been no deaths in the last 6 weeks!</p>
 				</div>
 				
-				<div>
-					<i></i>
-					<h3>RocketBus</h3>
-					<p>For cheapest fares, eatch the next RocketBus to the stars. Cheaper on your wallet,
+				<div class="col-sm-4 col-xs-6">
+					<i class="glyphicon glyphicon-send"></i>
+					<h3>RocketBus&reg</h3>
+					<p>For cheapest fares, eatch the next RocketBus&reg to the stars. Cheaper on your wallet,
 					and easiest way to make friends.</p>
 				</div>
 			</div>
 		</div>
 		
 		<div class="footer">
-			<div>
-				<div>
-					<div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-6">
 						<h4>Who We Are</h4>
-						<p><i>Blasting Off with Bootsrap</i> is the fastest way to space. 
+						<p><i>Blasting Off with Bootstrap</i> is the fastest way to space. 
 						<a href="tickets.html">Book your ticket today</a></p>
-						<p><a href="about.html">More About Us <i></i></a></p>
+						<p><a href="about.html">More About Us <i class="glyphicon glyphicon-arrow-right"></i></a></p>
 					</div>
 					
-					<div>
+					<div class="col-sm-2 col-xs-6">
 						<h4>Links</h4>
-						<ul>
+						<ul class="list-unstyled">
 							<li><a href="#">Home</a></li>
 							<li><a href="#">Tickets</a></li>
 							<li><a href="#">Stations</a></li>
 						</ul>
 					</div>
 					
-					<div class=""></div>
+					<div class="clearfix visible-xs"></div>
 					
-					<div>
+					<div class="col-sm-2 col-xs-6">
 						<h4>Stay in Touch</h4>
-						<ul>
+						<ul class="list-unstyled">
 							<li><a href="#">About</a></li>
 							<li><a href="#">Contact Us</a></li>
 							<li><a href="#">Blog</a></li>
@@ -113,20 +113,22 @@
 						</ul>
 					</div>
 					
-					<div>
+					<div class="col-sm-4 col-xs-6">
 						<h4>Contact Us</h4>
-						<ul>
-							<li><i class=""></i>Orlando</li>
-							<li><i class=""></i>1-555-blast-off</li>
-							<li><i class=""></i> <a href="">blastingoff@codeschool.com</a></li>
+						<ul class="list-unstyled">
+							<li><i class="glyphicon glyphicon-globe"></i>Orlando, FL</li>
+							<li><i class="glyphicon glyphicon-phone"></i>1-555-blast-off</li>
+							<li><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:blastingoff@codeschool.com">blastingoff@codeschool.com</a></li>
 						</ul>
 						
-						<p>Blasting Off With Bootsrap &copy2214.</p>
+						<p>Blasting Off With Bootstrap &copy2214.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		
+		<!-- Подключаю jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
