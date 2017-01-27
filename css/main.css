@@ -74,15 +74,47 @@ body {
 .nav>li>a:hover,
 .nav .open>a, 
 .nav .open>a:focus, 
-.nav .open>a:hover {
+.nav .open>a:hover ,
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover {
 	background-color: #204d74;
+	color: #fff;
 }
 
 .navbar-toggle .icon-bar {
 	background-color: #d8e6f3;
 }
 
+@media only screen and (max-width: 768px) {
+	.dropdown-menu>li>a {
+		color: #d8e6f3;
+	}
+}
+
 /* index.html */
 .features .glyphicon {
 	font-size: 32px;
+}
+
+/* blog.html */
+
+.about .fa-rocket {
+	font-size: 64px;
+}
+
+.posts h1 a {
+	color: #444;
+}
+
+.meta {
+	margin-bottom: 1em;
+	color: #777;
+}
+
+.meta li {
+	border-right: 1px solid #ddd;
+}
+
+.meta li:last-child {
+	border-right: none;
 }
