@@ -20,9 +20,7 @@ body {
   padding: 30px 0;
 }
 
-/* Если ширина экрана меньше 768, то начинает действовать этот блок.
-Он вместо одной строки подвала делает две и элементы подвала располагаются
-в две строки. */
+/* If width of the screen less 768px becomes effective this block. */
 @media only screen and (max-width: 768px) {
 	body { margin-bottom: 400px; }
 	.footer { height: 400px; }
@@ -32,7 +30,7 @@ body {
 	color: #5396cf;
 }
 
-/* Селектор изменяет цвет ссылки в подвале при фокусировании мышки на нем. */
+/* Selector change color of link in footer focused on selector. */
 .footer a:hover {
 	color: #d8e6f3;
 }
