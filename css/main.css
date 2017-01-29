@@ -95,8 +95,12 @@ body {
 	font-size: 32px;
 }
 
-.mb{
+.mb li {
 	margin-bottom: 5px;
+}
+
+.mb i {
+	margin-right: 5px;
 }
 
 /* blog.html */
