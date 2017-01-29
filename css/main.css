@@ -33,9 +33,6 @@ body {
 /* Selector change color of link in footer focused on selector. */
 .footer a:hover {
 	color: #d8e6f3;
-}
-
-.transition {
 	transition: 0.5s ease-in;
 }
 
