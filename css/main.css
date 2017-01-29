@@ -35,6 +35,10 @@ body {
 	color: #d8e6f3;
 }
 
+.transition {
+	transition: 0.5s ease-in;
+}
+
 .container {
 	max-width: 960px;
 }
@@ -92,6 +96,10 @@ body {
 /* index.html */
 .features .glyphicon {
 	font-size: 32px;
+}
+
+.mb{
+	margin-bottom: 5px;
 }
 
 /* blog.html */
